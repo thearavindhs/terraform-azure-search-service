@@ -18,6 +18,12 @@ variable "tags" {
   }
 }
 
+variable "cognitive_search_name" {
+  description = "The name of the Azure Cognitive Search"
+  type = "string"
+  nullable = false
+}
+
 variable "sku" {
   description = "The SKU for Azure Cognitive Search"
   default     = "standard" # Change this to your desired SKU
